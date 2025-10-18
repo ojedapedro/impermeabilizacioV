@@ -1,0 +1,2 @@
+export const BASE_URL = 'TU_URL_WEBAPP';
+export async function postInspection(payload){const res=await fetch(BASE_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});return res.json();}
